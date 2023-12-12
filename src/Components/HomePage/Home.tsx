@@ -12,12 +12,11 @@ const Home = () => {
                     <h1 className="title">
                         Plan Your Trip With Traveler dot
                     </h1>
-                    <p className="subTitle">
-                        Travel to your favorite city with respect for the environment
-                    </p>
-                    <button className="btn">
-                        <a href="#">Explore Now</a>
-                    </button>
+                    {/* <p className="subTitle">
+                        Pleasure With Travel
+
+                    </p> */}
+                  
                 </div>
                 <div className="homecard grid">
 
