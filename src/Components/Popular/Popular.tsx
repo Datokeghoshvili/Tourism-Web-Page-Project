@@ -2,6 +2,9 @@ import "./popular.css"
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 import { BsArrowRightShort } from "react-icons/bs";
+
+import { useEffect } from "react";
+import Axios from "axios"
 import Data from "../../DataObjects/Data"
 
 import { BsDot } from "react-icons/bs";
@@ -9,8 +12,35 @@ import { BsDot } from "react-icons/bs";
 
 
 const Popular = () => {
+    useEffect(() => {
+      const Getresponse = async ():Promise<void> => {
+        try {
+          const response = await Axios.get(
+            'https://travel-info-api.p.rapidapi.com/find-embassy',
+            {
+                params: {
+                    source: 'turkey',
+                    destination: 'usa'
+                  },
+                  headers: {
+                    'X-RapidAPI-Key': '055c96aa8dmshd87960b6c35c5d0p16b342jsn47ba8ebe6c46',
+                    'X-RapidAPI-Host': 'travel-info-api.p.rapidapi.com'
+                  }
+          });
+  
+          console.log(response);
+    } catch (error) {
+          console.error("error", error);
+        }
+      };
+  
+      Getresponse();
+    }, []);
+
+
     return ( 
         <>
+        {/* <button onClick={GetresponseR}></button> */}
         <section className="popular section container">
              <div className="secContainer">
                 

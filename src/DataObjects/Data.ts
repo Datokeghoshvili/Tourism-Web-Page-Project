@@ -24,8 +24,8 @@ type Destination ={
      id: 2,
      imgsrc: svaneti,
      desTtitle: "Svaneti Mountain View",
-     location:
-       "Enjoy breathtaking views in Svaneti, surrounded by the Greater Caucasus mountains",
+     location:"Waterfall is located in Kakheti, 8 km from the village of Gurgeniani, on the river Ninoskhevi",
+
      grade: "10/10",
    },
    {
@@ -41,10 +41,9 @@ type Destination ={
      imgsrc: batumi,
      desTtitle: "Batumi Beach Paradise",
      location:
-       "Relax on the beautiful beaches of Geogia Batumi sea, enjoying the Black Sea breeze",
+       "Relax on the beautiful beaches of Geogia Batumi sea, enjoying the Black Sea breeze mposs sss",
      grade: "10/10",
    },
  ];
  
-console.log(Data) 
 export default Data;
