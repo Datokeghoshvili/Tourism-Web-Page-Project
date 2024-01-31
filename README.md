@@ -22,6 +22,8 @@ export default {
     project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
+-----------------Project START----------------
+NPM RUN DEV
 }
 ```
 
